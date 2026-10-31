@@ -5,11 +5,15 @@ const PORT = 3000;
 //codigo node rotas e afins
 
 app.get("/", (req, res) => {
-    res.send("Hello World! 1");
+    res.send("Bem-vindo ao site da Marvel e DC!");
 })
 
-app.get("/rota2", (req, res) => {
-    res.send("Hello World! 2");
+app.get("/dc", (req, res) => {
+    res.send("Bem-vindo ao site da DC!");
+})
+
+app.get("/marvel", (req, res) => {
+    res.send("Bem-vindo ao site da Marvel!");
 })
 
 app.listen(PORT, () => {
